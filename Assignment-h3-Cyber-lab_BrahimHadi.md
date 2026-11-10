@@ -44,4 +44,9 @@ installed successfully and here is the proof:
  
 ![HashCracked](HashCracked.png)
 
+# References:
+Heinonen 2026: [How to Install Linux to Virtualbox?](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md)  
+Karvinen 2020: [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/)  
+Karvinen 2022: [Cracking Passwords with Hashcat](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)  
+
   
