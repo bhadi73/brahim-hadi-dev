@@ -2,26 +2,26 @@
 ## x) Read/watch/listen and summarize
 ### 1- Heinonen 2026: How to Install Linux to Virtualbox?
 	Heinonen documented a step-by-step guide on how to install Debian Linux in VirtualBox and here is a summary of it:
-•	Setup: Windows 11 host, VirtualBox 7.x, Debian 13.x guest. VT-x must be enabled in the UEFI/BIOS.
-•	Get the ISO: Download the Debian 13.6 live XFCE image from the official mirror.
-•	Create the VM: Linux / Debian 64-bit, no unattended install, give 2–4 GB RAM, 2 CPUs, EFI, 20–40 GB disk.
-•	Test, then install: Try the live system first, then run the Calamares installer (Helsinki, Finnish keyboard, erase disk, create user).
-•	After install: Reboot, log in with the Linux created account, and update the system with sudo apt-get update and sudo apt-get upgrade command lines.
+* Setup: Windows 11 host, VirtualBox 7.x, Debian 13.x guest. VT-x must be enabled in the UEFI/BIOS.
+* Get the ISO: Download the Debian 13.6 live XFCE image from the official mirror.
+* Create the VM: Linux / Debian 64-bit, no unattended install, give 2–4 GB RAM, 2 CPUs, EFI, 20–40 GB disk.
+* Test, then install: Try the live system first, then run the Calamares installer (Helsinki, Finnish keyboard, erase disk, create user).
+* After install: Reboot, log in with the Linux created account, and update the system with sudo apt-get update and sudo apt-get upgrade command lines.
 
 ### 2- Karvinen 2020: Command Line Basics Revisited
 This beginner’s  Linux command   lines guide teaches the most commonly used command lines to for example:
-•	Moving around: pwd shows where you are, ls lists files, cd changes folders, less reads files.
-•	Files: Edit with nano; manage with mkdir, mv, cp, rm. rm has no trash, so we need to be careful when using them.
-•	Remote and help: ssh and scp connect to and copy to other machines; man and --help explain commands.
-•	High privilege operations: Use sudo and used for example to install softwares and used as follow: sudo apt-get update, then apt-get install or purge. sudo is used only when needed because commands with sudo gains unlimited privileges and affect the whole system.
+* Moving around: pwd shows where you are, ls lists files, cd changes folders, less reads files.
+* Files: Edit with nano; manage with mkdir, mv, cp, rm. rm has no trash, so we need to be careful when using them.
+* Remote and help: ssh and scp connect to and copy to other machines; man and --help explain commands.
+* High privilege operations: Use sudo and used for example to install softwares and used as follow: sudo apt-get update, then apt-get install or purge. sudo is used only when needed because commands with sudo gains unlimited privileges and affect the whole system.
 
 
  ### 3- Karvinen 2022: Cracking Passwords with Hashcat
 This tutorial how to reveel passwords from their hashes using hashcat tool, for legal/ethical practice only for example at school to try how it works:
-•	Systems store password hashes, not passwords. A hash can’t be reversed, but we can test dictionary words until one matches.
-•	Testing Setup: On Debian, install hashcat, hashid, wget, then download the RockYou wordlist (14+ million plain passwords).
-•	Check: Use hashid to guess the hash type and its hashcat -m number (MD5 = 0).
-•	Crack: Run hashcat -m 0 '<hash>' rockyou.txt -o solved; the example hash turns out to be “summer”. Tested myself.
+* Systems store password hashes, not passwords. A hash can’t be reversed, but we can test dictionary words until one matches.
+* Testing Setup: On Debian, install hashcat, hashid, wget, then download the RockYou wordlist (14+ million plain passwords).
+* Check: Use hashid to guess the hash type and its hashcat -m number (MD5 = 0).
+* Crack: Run hashcat -m 0 '<hash>' rockyou.txt -o solved; the example hash turns out to be “summer”. Tested myself.
 
 ## a) Reserve your presentation title in Laksu. 
  ![Reserve Presentation](ReservePresentation.png)
